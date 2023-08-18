@@ -1,0 +1,52 @@
+{
+  "name": "kahu/sdk",
+  "description": "Kahu.app PHP SDK",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Flavio Heleno",
+      "email": "flaviohbatista@gmail.com",
+      "homepage": "https://flavioheleno.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Kahu\\SDK\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kahu\\SDK\\Test\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.2",
+    "cuyz/valinor": "^1.5",
+    "flavioheleno/jay": "^1.0",
+    "psr-discovery/http-client-implementations": "^1.0",
+    "psr-discovery/http-factory-implementations": "^1.0",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.0",
+    "psr/http-message": "^1.1 || ^2.0",
+    "ramsey/collection": "^2.0"
+  },
+  "require-dev": {
+    "kriswallsmith/buzz": "^1.2",
+    "nyholm/psr7": "^1.8",
+    "php-parallel-lint/php-parallel-lint": "^1.3",
+    "phpstan/phpstan": "^1.10",
+    "phpunit/phpunit": "^10.2",
+    "psy/psysh": "^0.11.18",
+    "roave/security-advisories": "dev-latest"
+  }
+}
